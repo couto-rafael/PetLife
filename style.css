@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  color: #263138;
+}
+
+header {
+  background-color: #ff9a6c;
+  padding: 24px 180px;
+  display: flex;
+  align-items: center; /*Alinhamento vertical*/
+  justify-content: space-between; /*Alinhamento horizontal*/
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 600;
+  padding: 0 32px;
+}
+
+#inicio {
+  display: flex;
+  align-items: center;
+  gap: 32px; /*Quando utilizo o display flex, posso usar o flex para colocar uma distância entre os elementos*/
+  padding: 24px 180px 24px 180px;
+  position: relative; /*Basicamente informa que os elementos utilizarão a sua section como base para se posicionar*/
+}
+
+.first {
+  padding: 0px 120px;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.paragraph {
+  line-height: 150%; /*Altura da linha*/
+  margin-bottom: 32px;
+  font-size: 1.15rem;
+}
+
+.botao {
+  background-color: #ff725e;
+  padding: 16px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.botao-transparente {
+  background-color: transparent;
+  color: #ff725e;
+  padding: 16px 32px;
+  text-underline-offset: 4px;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+#clinica {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 180px;
+}
+
+#clinica li {
+  margin-bottom: 16px;
+  margin-left: 32px;
+}
+
+#farmacia {
+  padding: 64px 180px;
+  text-align: center;
+}
+
+#farmacia img {
+  margin: 64px auto;
+}
+
+#farmacia .paragraph {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+#duvidas {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 180px;
+}
+
+.duvida {
+  position: relative;
+}
+
+.duvida h3 {
+  border: 3px solid #ff725e;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 24px;
+}
+
+.duvida img {
+  position: absolute; /*Absolute faz usa de referência a classe acima dele, nesse caso duvida. E ficará no top da classe*/
+  top: 32px;
+  right: 24px;
+}
+
+.duvida .paragraph {
+  border-right: 1px solid #ff725e;
+  border-bottom: 1px solid #ff725e;
+  border-left: 1px solid #ff725e;
+  border-radius: 0 0 8px 8px;
+  margin-top: -8px;
+  padding: 24px;
+}
+
+footer {
+  background-color: rgba(255, 152, 108, 0.25);
+  display: flex;
+  gap: 80px;
+  padding: 64px 180px;
+  justify-content: space-between;
+  font-size: 1.05rem;
+}
+
+footer img,
+footer .titulo {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+footer nav a {
+  color: #263138;
+  display: block; /*Vai colocar os elementos um em cima do outro*/
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+footer p {
+  margin-bottom: 16px;
+  max-width: 350px;
+}
+
+footer p a {
+  color: #263138;
+  text-decoration: none;
+}
+
+#copyright {
+  background-color: #263138;
+  color: #ffffff;
+  padding: 24px;
+  text-align: center;
+}
+
+#copyright a {
+  color: #ff9a6c;
+}
